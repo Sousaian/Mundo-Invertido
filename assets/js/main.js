@@ -1,6 +1,8 @@
-const switchThemeButton = document.getElementById("switch-theme-button");
+const switchThemeButtons = document.querySelectorAll(".invert-element");
 
-switchThemeButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-    document.body.classList.toggle("light-theme");
+switchThemeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+        document.body.classList.toggle("light-theme");
+    });
 });

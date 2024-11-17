@@ -83,6 +83,7 @@ h3 {
 
 p {
     color: var(--highlight-color);
+    font-size: 1.5rem;
 }
 
 p,
@@ -394,6 +395,7 @@ section{
 .footer_desktop p{
     max-width: 700px;
     margin-top: 24px;
+    font-size: 0.8rem;
 }
 
 .footer_desktop::before,
@@ -479,6 +481,12 @@ section{
       text-align: center; 
     }
 
+    #section-stranger-things-gallery .gallery-image {   
+      width: 100%;
+      margin: auto -10px;
+      outline: #000 solid 1px;
+    }
+
     #section-form .form-content {
       flex-direction: column;
       gap: 10vw;
@@ -488,9 +496,13 @@ section{
     #section-stranger-things-trailer iframe {
       width: 100%; 
       height: auto;
-    
-    
-}}
+    }
+
+    .footer_mobile{
+        display: none;
+    }
+
+}
 
 
 /* Responsividade para telas muito pequenas (Ex: Smartphones em modo retrato) */
